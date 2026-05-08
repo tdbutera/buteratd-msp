@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ButeraNet Intelligence — Private AI Appliances</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ButeraNet Intelligence — private AI appliances for organizations that handle sensitive information. Your data never leaves your building." />
+  <meta property="og:title" content="ButeraNet Intelligence" />
+  <meta property="og:description" content="Private AI for organizations that handle sensitive information." />
+  <meta property="og:url" content="https://intelligence.buteranet.com" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1F4E79" />
+  <link rel="canonical" href="https://intelligence.buteranet.com" />
+  <style>
+    :root{
+      --navy:#1F4E79; --navy-deep:#0F2540; --blue:#2E75B6; --ice:#CADCFC;
+      --soft:#F2F6FB; --grey:#595959; --accent:#F4B43A; --line:#BFCBE0;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    html,body{font-family:'Segoe UI', Arial, sans-serif; color:#222; background:#FAFCFE; line-height:1.55}
+    a{color:var(--blue); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Header */
+    header{background:var(--navy); color:white; padding:20px 6%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap}
+    header .brand{font-size:22px; font-weight:bold; letter-spacing:.3px}
+    header .brand span{color:var(--accent)}
+    header nav a{color:var(--ice); margin-left:24px; font-size:14px}
+
+    /* Hero */
+    .hero{background:linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); color:white; padding:80px 6% 100px; position:relative; overflow:hidden}
+    .hero::before{content:""; position:absolute; right:-100px; top:-100px; width:300px; height:300px; background:var(--accent); opacity:.07; border-radius:50%; transform:rotate(45deg)}
+    .hero h1{font-size:54px; font-weight:bold; max-width:880px; line-height:1.15; margin-bottom:18px}
+    .hero h1 em{color:var(--accent); font-style:normal}
+    .hero .sub{font-size:20px; max-width:780px; color:var(--ice); margin-bottom:36px; line-height:1.5}
+    .hero .ctas{display:flex; gap:16px; flex-wrap:wrap}
+    .btn{display:inline-block; padding:14px 28px; border-radius:6px; font-weight:bold; font-size:15px; transition:transform .15s}
+    .btn:hover{transform:translateY(-2px); text-decoration:none}
+    .btn-primary{background:var(--accent); color:var(--navy-deep)}
+    .btn-secondary{background:transparent; color:white; border:2px solid var(--ice)}
+
+    /* Sections */
+    section.body{padding:72px 6%; max-width:1200px; margin:0 auto}
+    section.body h2{color:var(--navy); font-size:32px; margin-bottom:14px; font-weight:bold}
+    section.body .lead{color:var(--grey); font-size:17px; max-width:780px; margin-bottom:36px}
+
+    /* Three differentiators */
+    .diffs{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px}
+    .diff{background:white; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:8px; padding:28px}
+    .diff h3{color:var(--navy); font-size:20px; margin-bottom:10px}
+    .diff p{color:var(--grey); font-size:15px}
+    .diff .num{display:inline-block; background:var(--soft); color:var(--blue); font-size:14px; font-weight:bold; padding:4px 10px; border-radius:4px; margin-bottom:14px}
+
+    /* Stats band */
+    .stats{background:var(--soft); padding:50px 6%; text-align:center}
+    .stats .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:30px; max-width:1100px; margin:0 auto}
+    .stat .n{font-size:48px; color:var(--navy); font-weight:bold; line-height:1}
+    .stat .l{color:var(--grey); font-size:14px; margin-top:8px}
+
+    /* Pricing */
+    .pricing{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px; margin-top:36px}
+    .tier{background:white; border:1px solid var(--line); border-radius:8px; padding:32px; position:relative}
+    .tier.featured{border:2px solid var(--accent); transform:scale(1.02)}
+    .tier.featured::before{content:"Recommended"; position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--accent); color:var(--navy-deep); padding:4px 14px; border-radius:14px; font-size:12px; font-weight:bold}
+    .tier h3{color:var(--navy); font-size:22px; margin-bottom:8px}
+    .tier .price{color:var(--navy); font-size:34px; font-weight:bold; margin:14px 0 4px}
+    .tier .price small{font-size:14px; color:var(--grey); font-weight:normal}
+    .tier .setup{color:var(--grey); font-size:13px; margin-bottom:18px}
+    .tier ul{list-style:none}
+    .tier li{padding:7px 0; padding-left:22px; position:relative; font-size:14px; color:#333}
+    .tier li::before{content:"✓"; position:absolute; left:0; color:var(--blue); font-weight:bold}
+
+    /* Sectors */
+    .sectors{display:flex; flex-wrap:wrap; gap:12px; margin-top:14px}
+    .sector{background:var(--ice); color:var(--navy); padding:8px 16px; border-radius:20px; font-size:13px; font-weight:bold}
+
+    /* CTA */
+    .cta-band{background:var(--navy); color:white; padding:60px 6%; text-align:center}
+    .cta-band h2{color:white; font-size:28px; margin-bottom:12px}
+    .cta-band p{color:var(--ice); margin-bottom:28px; max-width:600px; margin-left:auto; margin-right:auto}
+
+    /* Footer */
+    footer{background:var(--navy-deep); color:var(--ice); padding:40px 6%; text-align:center; font-size:13px; line-height:1.8}
+    footer .legal{margin-top:14px; font-size:11px; color:#7a90b0}
+
+    @media (max-width: 640px){
+      .hero{padding:50px 6% 70px}
+      .hero h1{font-size:36px}
+      .hero .sub{font-size:16px}
+      header nav{display:none}
+      section.body{padding:50px 6%}
+      .tier.featured{transform:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">ButeraNet<span> Intelligence</span></div>
+  <nav>
+    <a href="#what">What it is</a>
+    <a href="#why">Why it's different</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Private AI for organizations that handle <em>sensitive information</em>.</h1>
+  <p class="sub">A physical AI appliance that lives in your building, knows your organization completely, and never sends a byte of your data to anyone. Drop and walk away. Self-healing. Unlimited use.</p>
+  <div class="ctas">
+    <a class="btn btn-primary" href="#contact">Schedule a Conversation</a>
+    <a class="btn btn-secondary" href="#what">How It Works</a>
+  </div>
+</section>
+
+<section class="body" id="what">
+  <h2>What it is</h2>
+  <p class="lead">A private AI appliance deployed at your site. Loaded with foundation knowledge for your vertical plus your organization's own content. Operates fully offline. Browser-based. Works for every staff member from a single login.</p>
+
+  <div class="diffs">
+    <div class="diff">
+      <span class="num">01</span>
+      <h3>Knows your organization</h3>
+      <p>Your sermons, records, policies, financials, and correspondence — loaded once, queryable forever. Cloud AI does not know any client. This one knows yours.</p>
+    </div>
+    <div class="diff">
+      <span class="num">02</span>
+      <h3>Your data never leaves</h3>
+      <p>Inference happens locally. No API key. No vendor copy. No transit to outside servers. Verifiable by packet capture after deployment.</p>
+    </div>
+    <div class="diff">
+      <span class="num">03</span>
+      <h3>Survives outages</h3>
+      <p>Internet down on Sunday morning? The appliance keeps working. Cached integrations continue serving. Self-healing infrastructure recovers from failures before anyone notices.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="grid">
+    <div class="stat"><div class="n">$0</div><div class="l">per query forever</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">on-premise inference</div></div>
+    <div class="stat"><div class="n">2-6s</div><div class="l">typical response time</div></div>
+    <div class="stat"><div class="n">30+</div><div class="l">documented use cases</div></div>
+  </div>
+</section>
+
+<section class="body" id="why">
+  <h2>Built for organizations the AI industry forgot</h2>
+  <p class="lead">Churches. Nonprofits. Small businesses. Faith-based organizations. Professional firms. Anyone whose sensitive data cannot live in a cloud vendor's database.</p>
+
+  <div class="sectors">
+    <span class="sector">Churches &amp; Faith Orgs</span>
+    <span class="sector">Nonprofits</span>
+    <span class="sector">Small Law Firms</span>
+    <span class="sector">Solo Medical Practices</span>
+    <span class="sector">K-12 Private Schools</span>
+    <span class="sector">Government Contractors</span>
+    <span class="sector">RIAs &amp; CPAs</span>
+  </div>
+</section>
+
+<section class="body" id="pricing">
+  <h2>Three tiers, flat monthly rate, unlimited use</h2>
+  <p class="lead">No per-user fees. No per-query meters. No surprise bills. Setup is one-time; managed services are monthly recurring with everything included — monitoring, updates, support, and quarterly model refresh.</p>
+
+  <div class="pricing">
+    <div class="tier">
+      <h3>Starter</h3>
+      <div class="price">$299<small>/mo</small></div>
+      <div class="setup">$3,500 setup &nbsp;·&nbsp; 5-25 staff</div>
+      <ul>
+        <li>Foundation knowledge package</li>
+        <li>3 integration connectors</li>
+        <li>Remote staff training</li>
+        <li>Monthly monitoring &amp; updates</li>
+      </ul>
+    </div>
+    <div class="tier featured">
+      <h3>Standard</h3>
+      <div class="price">$449<small>/mo</small></div>
+      <div class="setup">$5,500 setup &nbsp;·&nbsp; 25-100 staff</div>
+      <ul>
+        <li>Everything in Starter</li>
+        <li>Up to 5 years of organizational archive</li>
+        <li>6 integration connectors</li>
+        <li>On-site installation &amp; training</li>
+        <li>Quarterly knowledge base review</li>
+      </ul>
+    </div>
+    <div class="tier">
+      <h3>Complete</h3>
+      <div class="price">$649<small>/mo</small></div>
+      <div class="setup">$8,500 setup &nbsp;·&nbsp; multi-campus</div>
+      <ul>
+        <li>Everything in Standard</li>
+        <li>Unlimited document ingestion</li>
+        <li>All available connectors</li>
+        <li>Custom document templates</li>
+        <li>Annual on-site refresh &amp; priority support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <h2>See it on your own data</h2>
+  <p>30-minute introductory call. Bring questions. Bring your hardest "but cloud AI can't…" problem. We'll talk through whether ButeraNet Intelligence is the right fit — no obligation, no commitment.</p>
+  <a class="btn btn-primary" href="mailto:tdbutera@proton.me?subject=ButeraNet%20Intelligence%20%E2%80%94%20Conversation%20Request">Email Travis Directly</a>
+</section>
+
+<footer>
+  <strong>ButeraNet Intelligence</strong> &nbsp;|&nbsp; A ButeraNet Solutions product &nbsp;|&nbsp; Pearl Harbor, HI<br>
+  Travis D. Butera &nbsp;|&nbsp; <a href="mailto:tdbutera@proton.me" style="color:var(--accent)">tdbutera@proton.me</a> &nbsp;|&nbsp; <a href="https://buteranet.com" style="color:var(--accent)">buteranet.com</a> &nbsp;|&nbsp; <a href="https://msp.buteranet.com" style="color:var(--accent)">msp.buteranet.com</a>
+  <div class="legal">© 2026 ButeraNet Solutions. All rights reserved.<br>Infrastructure. Security. Reliability.</div>
+</footer>
+
+</body>
+</html>
