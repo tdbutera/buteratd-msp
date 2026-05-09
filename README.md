@@ -43,7 +43,7 @@ Hawaii-based managed IT and AI platform for small organizations — churches, no
 
 - Web: <https://buteranet.com>
 - MSP site: <https://msp.buteranet.com>
-- Email: <tdbutera@proton.me>
+- Email: <travis@buteranet.com>
 - Phone: (812) 304-9813
 
 *Infrastructure. Security. Reliability.*
