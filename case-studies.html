@@ -83,6 +83,7 @@ footer a{color:var(--lblue);text-decoration:none}
     <p>An 8-person household running a flat consumer-grade network: two ZenWifi mesh nodes, no segmentation, two physical dead zones, and an asymmetric ISP capping upload at 38 Mbps. Professional government-connected work shared the same broadcast domain as kids' tablets and IoT cameras.</p>
     <h3>The Solution</h3>
     <p>OPNsense firewall on Protectli VP4630, MikroTik 2.5GbE managed core switch, two UniFi WiFi 7 access points with wired Cat-6A backhaul, five-VLAN segmentation, CrowdSec inbound enforcement + Maltrail outbound monitoring, Hawaiian Telcom 3 Gbps symmetric fiber WAN, full documentation portfolio.</p>
+    <p style="color:var(--muted);font-size:.9rem;margin-top:.5rem"><em>Note: this build predates ButeraNet's current standard of Ubiquiti/UniFi fabric for all sites. Today's engagements deploy UniFi unless a client specifically requires another platform.</em></p>
     <div class="metrics">
       <div class="metric"><div class="num">+150%</div><div class="label">Primary download</div></div>
       <div class="metric"><div class="num">+6,058%</div><div class="label">Primary upload</div></div>
@@ -111,7 +112,7 @@ footer a{color:var(--lblue);text-decoration:none}
     <h3>The Challenge</h3>
     <p>Office network grown by accretion since the company was founded — residential mesh router, two unmanaged switches, aging NAS, no documented users or backups. Cyber-insurance renewal flagging questions about MFA, segmentation, and backup that the team couldn't answer.</p>
     <h3>The Solution</h3>
-    <p>OPNsense firewall, MikroTik managed core, 2× UniFi U7 Pro APs, 5-VLAN segmentation (Staff / Field / Guest / Cameras / Mgmt), Proxmox host with Windows Server VM, Synology NAS with daily backup, ButeraNet Client Portal, CrowdSec + Maltrail.</p>
+    <p>UniFi Dream Machine Pro gateway/firewall, UniFi managed core switch, 2× UniFi U7 Pro APs, 5-VLAN segmentation (Staff / Field / Guest / Cameras / Mgmt), Proxmox host with Windows Server VM, Synology NAS with daily backup, ButeraNet Client Portal, UniFi threat management.</p>
     <div class="metrics">
       <div class="metric"><div class="num">−83%</div><div class="label">Owner hours/week on IT</div></div>
       <div class="metric"><div class="num">100%</div><div class="label">WiFi coverage in field bay</div></div>
@@ -128,7 +129,7 @@ footer a{color:var(--lblue);text-decoration:none}
     <h3>The Challenge</h3>
     <p>Donor data, beneficiary records, volunteer schedules, and grant-reporting documents on the same flat network as visiting-family WiFi. Federal grant audit 90 days away; original network setup was 2+ years undocumented after the volunteer who configured it moved away.</p>
     <h3>The Solution</h3>
-    <p>Full Tier 3 deployment: OPNsense + MikroTik + 3× UniFi U7 Pro APs, 5-VLAN segmentation tuned for nonprofit workflow, Proxmox host with Windows Server, ButeraNet Client Portal, AI Assistant loaded with org policies, grant-reporting docs, donor letters.</p>
+    <p>Full Tier 3 deployment: UniFi fabric (Dream Machine Pro Max + UniFi managed switching + 3× UniFi U7 Pro APs), 5-VLAN segmentation tuned for nonprofit workflow, Proxmox host with Windows Server, ButeraNet Client Portal, AI Assistant loaded with org policies, grant-reporting docs, donor letters.</p>
     <div class="metrics">
       <div class="metric"><div class="num">−87%</div><div class="label">Audit prep time</div></div>
       <div class="metric"><div class="num">100%</div><div class="label">WiFi coverage</div></div>
