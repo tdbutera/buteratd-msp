@@ -4,7 +4,7 @@ Source for the **ButeraNet Solutions** managed-services landing page, served at 
 
 ## What this is
 
-Single-file static site — all CSS, JS, and SVG icons inlined. The only external dependency is Google Fonts (Inter). Deploys automatically on push to `main`.
+Single-file static site ,  all CSS, JS, and SVG icons inlined. The only external dependency is Google Fonts (Inter). Deploys automatically on push to `main`.
 
 ## Repo contents
 
@@ -18,7 +18,7 @@ Single-file static site — all CSS, JS, and SVG icons inlined. The only externa
 
 ## Local development
 
-Open `index.html` in any browser — no build step required.
+Open `index.html` in any browser ,  no build step required.
 
 ## Deploy
 
@@ -39,11 +39,11 @@ GitHub Pages picks up the change within a minute. Cloudflare cache (max-age 600)
 
 ## About ButeraNet Solutions
 
-Hawaii-based managed IT and AI platform for small organizations — churches, nonprofits, and small businesses. Founded by a U.S. Navy Senior Chief with 18+ years of IT and cybersecurity experience.
+Hawaii-based managed IT and AI platform for small organizations ,  churches, nonprofits, and small businesses. Founded by a senior engineer with 18+ years of IT and cybersecurity experience.
 
 - Web: <https://buteranet.com>
 - MSP site: <https://msp.buteranet.com>
 - Email: <travis@buteranet.com>
-- Phone: (812) 304-9813
+- Phone: (808) 213-1629
 
 *Infrastructure. Security. Reliability.*
