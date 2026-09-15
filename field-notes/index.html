@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Field Notes | ButeraNet</title>
+<meta name="description" content="Technical write-ups from real Hawaii network engagements: a dead access point, air-gapped AI, and CMMC 2.0 for small contractors.">
+<link rel="canonical" href="https://net.buteranet.com/field-notes/">
+<meta property="og:title" content="Field Notes | ButeraNet">
+<meta property="og:description" content="Technical write-ups from real Hawaii network engagements: a dead access point, air-gapped AI, and CMMC 2.0 for small contractors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://net.buteranet.com/field-notes/">
+<meta property="og:image" content="https://net.buteranet.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://net.buteranet.com/og-image.png">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="stylesheet" href="/assets/bn.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="/">ButeraNet<b>.</b></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav"><a href="/services/">Services</a><a href="/industries/">Industries</a><a href="/work/">Work</a><a href="/field-notes/" aria-current="page">Field Notes</a><a href="/about/">About</a><a class="btn" href="/contact/">Request an assessment</a></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="tight" style="padding-top:clamp(36px,5vw,64px)">
+  <div class="wrap narrow">
+    <p class="kicker">Field notes</p>
+    <h1>Write-ups from actual jobs.</h1>
+    <p class="lede">No gated downloads and no product pitches. These exist because I had
+    to work the problem out and writing it down was the cheapest way to remember.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap cards">
+    <div class="card"><span class="num">FIELD</span>
+      <h3><a href="https://buteranet.com/ap-dead-11-days.html">The access point
+        that was dead for eleven days &rarr;</a></h3>
+      <p>The hardware was fine and the cable was fine. What failed was the record of
+      which port it was on, and the fix took ninety seconds once that was
+      reconstructed.</p></div>
+    <div class="card"><span class="num">BUILD</span>
+      <h3><a href="https://buteranet.com/air-gapped-ai.html">Air-gapped AI, and
+        who actually needs it &rarr;</a></h3>
+      <p>Who benefits from running models on hardware they control, who does not, and
+      the tradeoffs in both directions.</p></div>
+    <div class="card"><span class="num">COMPLY</span>
+      <h3><a href="https://buteranet.com/cmmc-2-small-contractors.html">CMMC 2.0
+        from the field &rarr;</a></h3>
+      <p>What a small defense contractor, or a firm supplying one, has to do in practice.
+      The burden is documentation and evidence far more than new technology.</p></div>
+  </div>
+  <div class="wrap">
+    <p class="note" style="margin-top:26px">These three pieces are currently hosted on
+    buteranet.com and are being migrated to this host. The links above go to the
+    published versions.</p>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="color:#fff;font-size:1.2rem">ButeraNet<b style="color:#4A90D0">.</b></div>
+        <p style="margin:13px 0 0;max-width:34ch">UniFi network design and deployment for
+        Hawaii facilities that were never built as office buildings.</p>
+        <p class="mono" style="margin-top:15px;font-size:.84rem">Honolulu, Hawaii<br>
+        <a href="tel:+18082131629">(808) 213-1629</a></p>
+      </div>
+      <div><h4>Practice</h4>
+        <a href="/services/">Services</a><a href="/work/">Work</a>
+        <a href="/field-notes/">Field Notes</a></div>
+      <div><h4>Sectors</h4>
+        <a href="/industries/houses-of-worship/">Houses of worship</a>
+        <a href="/industries/">All sectors</a></div>
+      <div><h4>Company</h4>
+        <a href="/about/">About</a><a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+    </div>
+    <div class="legal">
+      <p>ButeraNet Solutions LLC, Honolulu, Hawaii. Network design, configuration,
+      documentation and support. ButeraNet Solutions LLC is not a licensed Hawaii
+      contractor; physical cabling, conduit and mounting are performed by appropriately
+      licensed contractors engaged directly by the client.</p>
+      <p style="margin:0">Client names withheld pending written consent. Measurements
+      shown are from real engagements and are reported without identifying the site.</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
+  if(!b||!n) return;
+  b.addEventListener('click',function(){
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open?'Close':'Menu';
+  });
+})();
+</script>
+</body>
+</html>

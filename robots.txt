@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://msp.buteranet.com/sitemap.xml
+Sitemap: https://net.buteranet.com/sitemap.xml

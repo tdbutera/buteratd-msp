@@ -1,397 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="theme-color" content="#1F4E79">
-<title>ButeraNet Solutions | Managed IT Services Oahu Hawaii</title>
-  <link rel="canonical" href="https://msp.buteranet.com/" />
-<meta name="description" content="Enterprise-grade network infrastructure, security, and AI-powered managed IT services for small businesses, churches, and nonprofits in Hawaii. Infrastructure. Security. Reliability.">
-<meta name="keywords" content="managed IT services Hawaii, MSP Oahu, small business IT support, church IT, network infrastructure, cybersecurity, AI assistant, managed network">
-<meta name="author" content="ButeraNet Solutions">
-<meta property="og:title" content="ButeraNet Solutions | Managed IT Services Oahu Hawaii">
-<meta property="og:description" content="Enterprise-grade managed IT, security, and AI for small organizations. Infrastructure. Security. Reliability.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ButeraNet | UniFi Network Design and Deployment, Honolulu</title>
+<meta name="description" content="UniFi network design, deployment and documentation for Hawaii churches, schools, nonprofits and public agencies. Hardware you own, no per-device license, one engineer from survey to handover.">
+<link rel="canonical" href="https://net.buteranet.com/">
+<meta property="og:title" content="ButeraNet | UniFi Network Design and Deployment, Honolulu">
+<meta property="og:description" content="UniFi network design, deployment and documentation for Hawaii churches, schools, nonprofits and public agencies. Hardware you own, no per-device license, one engineer from survey to handover.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://msp.buteranet.com">
-<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://net.buteranet.com/">
+<meta property="og:image" content="https://net.buteranet.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image" content="https://msp.buteranet.com/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ButeraNet Solutions, Infrastructure. Security. Reliability.">
-<meta name="twitter:image" content="https://msp.buteranet.com/og-image.png">
-<meta name="twitter:image:alt" content="ButeraNet Solutions, Infrastructure. Security. Reliability.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMxRjRFNzkiLz48dGV4dCB4PSI1MCUiIHk9IjU0JSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGRkZGIj5CTjwvdGV4dD48L3N2Zz4=">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://msp.buteranet.com/#business",
-  "name": "ButeraNet Solutions",
-  "alternateName": "ButeraNet Solutions MSP",
-  "description": "Enterprise-grade network infrastructure, security, and AI-powered managed IT services for small businesses, churches, and nonprofits in Hawaii.",
-  "url": "https://msp.buteranet.com",
-  "telephone": "+1-808-213-1629",
-  "email": "travis@buteranet.com",
-  "founder": { "@type": "Person", "name": "Travis D. Butera", "jobTitle": "Principal Engineer" },
-  "address": { "@type": "PostalAddress", "addressRegion": "HI", "addressCountry": "US" },
-  "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Oahu, Hawaii" },
-    { "@type": "Country", "name": "United States" }
-  ],
-  "serviceType": ["Managed IT Services", "Network Infrastructure", "Cybersecurity", "AI Platform Deployment"],
-  "slogan": "Infrastructure. Security. Reliability."
-}
-</script>
-<style>
-:root{
-  --navy:#1F4E79; --navy-d:#163759; --blue:#2E75B6; --blue-l:#3a86c8;
-  --lblue:#D5E8F0; --white:#FFFFFF; --bg:#FAFCFE; --text:#1A2530;
-  --muted:#5C6B7A; --border:#E1E8EE;
-  --shadow:0 1px 3px rgba(31,78,121,.08),0 4px 12px rgba(31,78,121,.04);
-  --shadow-lg:0 4px 20px rgba(31,78,121,.10),0 16px 40px rgba(31,78,121,.06);
-  --r:10px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',Arial,system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
-
-/* HEADER */
-header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
-.nav{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{font-weight:800;font-size:1.25rem;letter-spacing:.02em;text-decoration:none;color:var(--white)}
-.brand small{font-weight:500;opacity:.85;font-size:.78rem;display:block;letter-spacing:.04em}
-nav ul{list-style:none;display:flex;gap:1.5rem;align-items:center}
-nav a{color:var(--white);text-decoration:none;font-weight:500;font-size:.95rem;opacity:.9;transition:opacity .2s}
-nav a:hover,nav a:focus-visible{opacity:1;text-decoration:underline;text-underline-offset:4px;outline:none}
-nav .cta{background:var(--blue);padding:.55rem 1.1rem;border-radius:var(--r);opacity:1;font-weight:600}
-nav .cta:hover{background:var(--blue-l);text-decoration:none}
-.hamburger{display:none;background:none;border:0;color:var(--white);font-size:1.5rem;cursor:pointer;padding:.5rem;border-radius:var(--r)}
-.hamburger:hover,.hamburger:focus-visible{background:rgba(255,255,255,.1);outline:none}
-
-/* HERO */
-.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-d) 100%);color:var(--white);padding:5rem 1.5rem 6rem;text-align:center;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:linear-gradient(to bottom right,transparent 49%,var(--white) 50%)}
-.hero-i{max-width:900px;margin:0 auto;position:relative;z-index:1}
-.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:1rem;letter-spacing:-.02em}
-.hero .tag{font-size:clamp(1.1rem,2vw,1.4rem);color:var(--lblue);font-style:italic;font-weight:400;margin-bottom:1.5rem}
-.hero .lead{font-size:clamp(1rem,1.5vw,1.15rem);max-width:740px;margin:0 auto 2rem;opacity:.95}
-.hero-cta{display:inline-flex;gap:1rem;flex-wrap:wrap;justify-content:center}
-.btn{display:inline-block;padding:.85rem 1.6rem;border-radius:var(--r);font-weight:600;text-decoration:none;transition:transform .15s,box-shadow .2s;cursor:pointer;border:0;font-family:inherit;font-size:1rem}
-.btn-pri{background:var(--white);color:var(--navy)}
-.btn-pri:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-.btn-ghost{color:var(--white);border:1.5px solid rgba(255,255,255,.4);background:transparent}
-.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
-
-/* SECTIONS */
-section{padding:5rem 1.5rem;scroll-margin-top:80px}
-.s-i{max-width:1200px;margin:0 auto}
-.s-h{text-align:center;margin-bottom:3rem}
-.s-h h2{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;color:var(--navy);margin-bottom:.75rem;letter-spacing:-.01em}
-.s-h p{color:var(--muted);font-size:1.1rem;max-width:720px;margin:0 auto}
-
-/* SERVICES */
-#services{background:var(--bg)}
-.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2rem}
-.tier{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:2rem 1.75rem;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.tier:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.tier .icon{width:48px;height:48px;background:var(--lblue);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--navy);margin-bottom:1.25rem}
-.tier h3{font-size:1.25rem;color:var(--navy);margin-bottom:.4rem;font-weight:700}
-.tier .price{color:var(--blue);font-weight:700;font-size:.95rem;margin-bottom:1rem}
-.tier ul{list-style:none;margin:1rem 0;flex:1}
-.tier li{padding:.5rem 0 .5rem 1.6rem;position:relative;color:var(--text);font-size:.92rem;line-height:1.5}
-.tier li::before{content:'';position:absolute;left:0;top:.85rem;width:8px;height:8px;border-radius:50%;background:var(--blue)}
-.tier .cta-link{display:inline-block;color:var(--blue);font-weight:600;text-decoration:none;margin-top:1rem;border-top:1px solid var(--border);padding-top:1rem}
-.tier .cta-link:hover{text-decoration:underline}
-
-/* PLATFORM */
-#platform{background:var(--white)}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2rem}
-.product{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem}
-.product h3{color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:.75rem}
-.product p{color:var(--text);font-size:.95rem;line-height:1.6}
-
-/* PROCESS */
-#process{background:var(--bg)}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:2rem;position:relative}
-.step{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem 1rem;text-align:center;position:relative}
-.step .n{width:36px;height:36px;background:var(--blue);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 1rem}
-.step h4{color:var(--navy);font-size:1rem;font-weight:700;margin-bottom:.5rem}
-.step p{color:var(--muted);font-size:.85rem}
-@media(max-width:900px){.steps{grid-template-columns:1fr;gap:.75rem}.step{text-align:left;display:flex;align-items:flex-start;gap:1rem}.step .n{margin:0;flex-shrink:0}}
-
-/* ABOUT */
-#about{background:var(--white)}
-.about-g{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1100px;margin:0 auto}
-@media(max-width:768px){.about-g{grid-template-columns:1fr;gap:2rem}}
-.about-card{background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:var(--r);padding:2rem}
-.about-card h3{color:var(--navy);margin-bottom:1rem;font-size:1.25rem}
-.about-card .creds{list-style:none;margin-top:.5rem;display:grid;gap:.5rem}
-.about-card .creds li{padding-left:1.5rem;position:relative;font-size:.95rem}
-.about-card .creds li::before{content:'✓';position:absolute;left:0;color:var(--blue);font-weight:700}
-
-/* CONTACT */
-#contact{background:var(--navy);color:var(--white)}
-#contact .s-h h2{color:var(--white)}
-#contact .s-h p{color:var(--lblue)}
-.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1000px;margin:0 auto}
-@media(max-width:768px){.c-grid{grid-template-columns:1fr}}
-.c-info{display:grid;gap:1rem}
-.c-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:var(--r);padding:1.25rem}
-.c-card .lbl{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--lblue);margin-bottom:.4rem}
-.c-card a,.c-card .v{color:var(--white);text-decoration:none;font-weight:600;font-size:1.05rem;word-break:break-word}
-.c-card a:hover{text-decoration:underline}
-.c-form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:var(--r);padding:1.5rem}
-.c-form label{display:block;font-size:.85rem;color:var(--lblue);margin-bottom:.4rem;margin-top:.75rem}
-.c-form label:first-of-type{margin-top:0}
-.c-form input,.c-form textarea{width:100%;padding:.6rem .8rem;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:var(--white);border-radius:6px;font-family:inherit;font-size:.95rem}
-.c-form input:focus,.c-form textarea:focus{outline:2px solid var(--blue);outline-offset:1px;background:rgba(255,255,255,.08)}
-.c-form textarea{resize:vertical;min-height:90px}
-.c-form .form-note{font-size:.78rem;color:var(--lblue);margin-top:.75rem;font-style:italic}
-.c-form button{margin-top:1rem;width:100%;background:var(--blue);color:var(--white)}
-.c-form button:hover{background:var(--blue-l)}
-
-/* FOOTER */
-footer{background:var(--navy-d);color:var(--white);padding:2.5rem 1.5rem;text-align:center;font-size:.9rem}
-footer .f-i{max-width:1200px;margin:0 auto}
-footer .tag{color:var(--lblue);font-style:italic;margin-bottom:.5rem}
-footer .copy{opacity:.7}
-footer a{color:var(--lblue);text-decoration:none}
-footer a:hover{text-decoration:underline}
-
-/* MOBILE */
-@media(max-width:720px){
-  nav ul{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:1rem;border-top:1px solid rgba(255,255,255,.1);gap:.5rem}
-  nav ul.open{display:flex}
-  nav a{padding:.5rem 0}
-  nav .cta{padding:.5rem 1rem;text-align:center}
-  .hamburger{display:block}
-  section{padding:3rem 1rem}
-  .hero{padding:3.5rem 1rem 4.5rem}
-}
-</style>
+<meta name="twitter:image" content="https://net.buteranet.com/og-image.png">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="stylesheet" href="/assets/bn.css">
 </head>
 <body>
-
-<header>
-  <div class="nav">
-    <a href="#" class="brand" aria-label="ButeraNet Solutions home">
-      ButeraNet Solutions
-      <small>Infrastructure. Security. Reliability.</small>
-    </a>
-    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navlist" id="hamb">☰</button>
-    <nav>
-      <ul id="navlist">
-        <li><a href="#services">Services</a></li>
-        <li><a href="https://intelligence.buteranet.com">Intelligence</a></li>
-        <li><a href="/pricing.html">Pricing</a></li>
-        <li><a href="/case-studies.html">Case Studies</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/faq.html">FAQ</a></li>
-        <li><a href="#fieldnotes">Field Notes</a></li>
-        <li><a href="#contact" class="cta">Get a free assessment</a></li>
-      </ul>
-    </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="/">ButeraNet<b>.</b></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav"><a href="/services/">Services</a><a href="/industries/">Industries</a><a href="/work/">Work</a><a href="/field-notes/">Field Notes</a><a href="/about/">About</a><a class="btn" href="/contact/">Request an assessment</a></nav>
   </div>
 </header>
+<main id="main">
 
-<section class="hero" aria-labelledby="hero-h">
-  <div class="hero-i">
-    <h1 id="hero-h">ButeraNet Solutions</h1>
-    <div class="tag">Infrastructure. Security. Reliability.</div>
-    <p class="lead">We deploy and manage complete technology infrastructure for small organizations, so they never have to think about IT again.</p>
-    <div class="hero-cta">
-      <a href="#contact" class="btn btn-pri">Get a free assessment</a>
-      <a href="#services" class="btn btn-ghost">See our services</a>
+<section class="tight" style="padding-top:clamp(44px,6vw,80px)">
+  <div class="wrap split hero">
+    <div>
+      <p class="kicker">UniFi network design and deployment, Honolulu</p>
+      <h1>Networks you own, on a platform with no per-device license.</h1>
+      <p class="lede">I survey the building, design the network, configure it on the
+      bench, cut it over midweek, and hand you documentation your own team can work
+      from. The hardware is yours. The console is yours. So is the paperwork.</p>
+      <div class="pair">
+        <a class="btn" href="/contact/">Request an assessment</a>
+        <a class="btn ghost" href="/work/">See the measurements</a>
+      </div>
     </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 760 420" role="img" aria-label="Five layers of a network design, from internet circuit down to access points"><rect width="760" height="420" fill="#fff"/><rect x="150" y="22" width="460" height="54" rx="7" fill="#2E75B6"/><text x="380" y="45" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="#fff">Internet circuit</text><text x="380" y="63" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#D6E4F2">one measured uplink, upload is the real constraint</text><text x="135" y="53" text-anchor="end" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="11" font-weight="bold" fill="#6B7280">L1</text><line x1="380" y1="76" x2="380" y2="100" stroke="#D8E0EA" stroke-width="3"/><rect x="150" y="100" width="460" height="54" rx="7" fill="#1F3A5F"/><text x="380" y="123" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="#fff">Gateway and controller</text><text x="380" y="141" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#D6E4F2">routing, firewall, VLANs, the console itself</text><text x="135" y="131" text-anchor="end" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="11" font-weight="bold" fill="#6B7280">L2</text><line x1="380" y1="154" x2="380" y2="178" stroke="#D8E0EA" stroke-width="3"/><rect x="150" y="178" width="460" height="54" rx="7" fill="#1F3A5F"/><text x="380" y="201" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="#fff">Core switch</text><text x="380" y="219" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#D6E4F2">the layer everything else depends on</text><text x="135" y="209" text-anchor="end" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="11" font-weight="bold" fill="#6B7280">L3</text><line x1="380" y1="232" x2="380" y2="256" stroke="#D8E0EA" stroke-width="3"/><rect x="150" y="256" width="460" height="54" rx="7" fill="#2E75B6"/><text x="380" y="279" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="#fff">Edge switches</text><text x="380" y="297" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#D6E4F2">one per closet, powered, uplinked deliberately</text><text x="135" y="287" text-anchor="end" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="11" font-weight="bold" fill="#6B7280">L4</text><line x1="380" y1="310" x2="380" y2="334" stroke="#D8E0EA" stroke-width="3"/><rect x="150" y="334" width="460" height="54" rx="7" fill="#15803D"/><text x="380" y="357" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="#fff">Access points</text><text x="380" y="375" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#D6E4F2">placed from measurement, not from a template</text><text x="135" y="365" text-anchor="end" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="11" font-weight="bold" fill="#6B7280">L5</text><rect x="628" y="178" width="126" height="54" rx="7" fill="#fff" stroke="#B91C1C" stroke-width="1.6"/><text x="691" y="199" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" font-weight="bold" fill="#B91C1C">Single link here</text><text x="691" y="216" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#B91C1C">is the whole building</text><line x1="610" y1="205" x2="628" y2="205" stroke="#B91C1C" stroke-width="1.6" stroke-dasharray="4 3"/></svg>
+      <figcaption>Five layers, designed in order. Most of the failures I get called
+      about live at layer three, where one uplink quietly carries an entire
+      building.</figcaption>
+    </figure>
   </div>
 </section>
 
-<section id="services" aria-labelledby="services-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="services-h">Our four service layers</h2>
-      <p>Pick the layer that fits your scale today. Layers stack, move up as your needs grow.</p>
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <p class="kicker">The pricing model, plainly</p>
+      <h2>What renting a network actually costs</h2>
+      <p>Several enterprise platforms charge an annual subscription per switch and per
+      access point for the right to manage hardware you already bought. Let the renewal
+      lapse and the console degrades or locks. The equipment keeps drawing power in your
+      closet and you lose the ability to change a password on it.</p>
+      <p>UniFi charges no recurring per-device license for switching, wireless, routing,
+      cameras or door access. Buy the gear once and manage it for as long as it runs.
+      That is a property of the platform, and it is most of the reason I standardized
+      on it.</p>
     </div>
-    <div class="tiers">
-      <article class="tier">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M5 6h14M5 18h14"/></svg></div>
-        <h3>Network Infrastructure</h3>
-        <div class="price">$800 – $5,000+ project / $200 – $750 / mo</div>
-        <ul>
-          <li>Enterprise-grade firewall, switching, and WiFi 7</li>
-          <li>Five-VLAN segmentation for staff, IoT, kids, guest, and management</li>
-          <li>CrowdSec inbound + Maltrail outbound threat detection</li>
-        </ul>
-        <a href="#contact" class="cta-link">Request an assessment →</a>
-      </article>
-      <article class="tier">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><circle cx="7" cy="7" r=".5" fill="currentColor"/><circle cx="7" cy="17" r=".5" fill="currentColor"/></svg></div>
-        <h3>Managed Technology Platform</h3>
-        <div class="price">$2,500 – $8,000 deploy / $500 – $900 / mo</div>
-        <ul>
-          <li>On-premise Proxmox server, Windows Server VM, NAS, UPS</li>
-          <li>ButeraNet Client Portal, green/yellow/red dashboard</li>
-          <li>File shares, central user accounts, configuration backups</li>
-        </ul>
-        <a href="#contact" class="cta-link">Request an assessment →</a>
-      </article>
-      <article class="tier">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>AI-Enhanced Operations</h3>
-        <div class="price">$3,000 – $10,000 setup / $900 – $1,500 / mo</div>
-        <ul>
-          <li>Private AI assistant loaded with your organization's data</li>
-          <li>Sermon prep, donor letters, SOPs, scheduling, document drafting</li>
-          <li>Private AI appliance, your data never leaves your building. <a href="https://intelligence.buteranet.com">Learn more →</a></li>
-        </ul>
-        <a href="#contact" class="cta-link">Request an assessment →</a>
-      </article>
-      <article class="tier">
-        <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg></div>
-        <h3>Security &amp; Compliance</h3>
-        <div class="price">$2,500 – $15,000 / $1,000 – $3,000 / mo</div>
-        <ul>
-          <li>Cybersecurity assessments and policy development</li>
-          <li>Security framework alignment (NIST CSF, CIS Controls)</li>
-          <li>Built on deep network-security and information-assurance experience</li>
-        </ul>
-        <a href="#contact" class="cta-link">Request an assessment →</a>
-      </article>
+    <div class="tscroll" style="margin-top:34px">
+      <table class="spec">
+        <thead><tr><th>Over five years</th><th>Subscription platform</th><th>This platform</th></tr></thead>
+        <tbody>
+          <tr><td>Hardware</td><td class="m">Purchased</td><td class="m">Purchased</td></tr>
+          <tr><td>Right to manage it</td><td class="m">Annual fee, per device</td><td class="m">Included, no expiry</td></tr>
+          <tr><td>If an invoice is late</td><td class="m">Console degrades or locks</td><td class="m">Nothing changes</td></tr>
+          <tr><td>Camera recording</td><td class="m">Often per camera, per month</td><td class="m">Local storage you own</td></tr>
+          <tr><td>Who holds the console</td><td class="m">Often the vendor or their reseller</td><td class="m">You. I hold a delegated account</td></tr>
+        </tbody>
+      </table>
     </div>
+    <p class="note" style="margin-top:22px">Comparison is of licensing models, not of
+    vendors. Some subscription platforms are excellent, and for a client with a large
+    internal IT team the tradeoff can go the other way. I will tell you when that is
+    the case.</p>
   </div>
 </section>
 
-<section id="platform" aria-labelledby="platform-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="platform-h">The ButeraNet platform</h2>
-      <p>Four software products built on a unified foundation. Every layer-2-or-higher client gets them.</p>
+<section class="dark">
+  <div class="wrap">
+    <p class="kicker on-dark">Measured, one Oahu campus</p>
+    <h2 style="max-width:26ch">Numbers from a real survey, reported without naming the site</h2>
+    <div class="stats" style="margin-top:34px">
+      <div class="stat"><b>257</b><span>competing wireless networks within range of one campus</span></div>
+      <div class="stat"><b>68%</b><span>peak airtime utilization on 2.4&nbsp;GHz before redesign</span></div>
+      <div class="stat"><b>7</b><span>networks defined in the console, all sharing one flat /24</span></div>
+      <div class="stat"><b>11</b><span>days an access point sat dead because of a paperwork gap</span></div>
     </div>
-    <div class="products">
-      <div class="product"><h3>Client Portal</h3><p>Green/yellow/red dashboard your staff can read in 30 seconds. Every device, AP, and workstation in real time. Self-service visibility that cuts support calls.</p></div>
-      <div class="product"><h3>Command Center</h3><p>Operator view for our engineers. All clients on one screen. Every alert, patch state, maintenance item, revenue line. Built on the CIC Orchestrator backend.</p></div>
-      <div class="product"><h3>AI Assistant</h3><p>Private AI deployed per client on their hardware. Loaded with their documents and policies. Role-based access. Never trained on cross-client data. Now a standalone product, <a href="https://intelligence.buteranet.com">visit ButeraNet Intelligence →</a></p></div>
-      <div class="product"><h3>Compliance Manager</h3><p>Tracks security controls, policy acknowledgments, and audit evidence for organizations aligning to common security frameworks (NIST CSF, CIS Controls).</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="process" aria-labelledby="process-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="process-h">How we work</h2>
-      <p>Five phases. Most engagements move through all five in 4–6 weeks.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><h4>Assessment</h4><p>Free on-site survey, baseline performance, full device inventory, gap analysis.</p></div>
-      <div class="step"><div class="n">2</div><h4>Design</h4><p>Written design, network diagram, hardware bill of materials, threat model.</p></div>
-      <div class="step"><div class="n">3</div><h4>Quote</h4><p>Fixed-price proposal, hardware at cost-plus-markup, labor by phase, GET applied.</p></div>
-      <div class="step"><div class="n">4</div><h4>Implementation</h4><p>Procure, bench-stage, configure, and cut over with minimum downtime. Physical cabling by a licensed contractor.</p></div>
-      <div class="step"><div class="n">5</div><h4>Managed Services</h4><p>24/7 monitoring, monthly reports, quarterly reviews, incident response.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" aria-labelledby="about-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="about-h">Built by a working engineer</h2>
-      <p>Not a sales team. Not a tier-1 ticket queue. The engineer who designs your network is the engineer who configures it and the engineer who responds when something needs attention.</p>
-    </div>
-    <div class="about-g">
+    <div class="split flip" style="margin-top:44px">
+      <figure class="diagram on-dark">
+        <svg viewBox="0 0 700 250" role="img" aria-label="One flat network compared with six separated networks behind a gateway"><rect width="700" height="250" fill="#fff"/><text x="14" y="20" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#6B7280">BEFORE, one flat network</text><rect x="14" y="30" width="300" height="46" rx="6" fill="#fff" stroke="#B91C1C" stroke-width="1.7"/><text x="164" y="50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#B91C1C">Everything on one subnet</text><text x="164" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#B91C1C">a thermostat can reach the finance PC</text><text x="386" y="20" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#1F3A5F">AFTER, separated by role</text><rect x="386" y="30" width="300" height="46" rx="6" fill="#1F3A5F"/><text x="536" y="50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#fff">Gateway enforces the boundary</text><text x="536" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#C6D6E8">routing between roles is a decision, not an accident</text><line x1="536" y1="76" x2="430" y2="100" stroke="#D8E0EA" stroke-width="1.6"/><rect x="386" y="100" width="88" height="46" rx="5" fill="#fff" stroke="#15803D" stroke-width="1.6"/><text x="430" y="128" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#15803D" font-weight="bold">Staff</text><line x1="536" y1="76" x2="532" y2="100" stroke="#D8E0EA" stroke-width="1.6"/><rect x="488" y="100" width="88" height="46" rx="5" fill="#fff" stroke="#2E75B6" stroke-width="1.6"/><text x="532" y="128" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#2E75B6" font-weight="bold">Guest</text><line x1="536" y1="76" x2="634" y2="100" stroke="#D8E0EA" stroke-width="1.6"/><rect x="590" y="100" width="88" height="46" rx="5" fill="#fff" stroke="#1F3A5F" stroke-width="1.6"/><text x="634" y="121" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9.5" fill="#1F3A5F" font-weight="bold">Audio</text><text x="634" y="133" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9.5" fill="#1F3A5F" font-weight="bold">and video</text><line x1="536" y1="76" x2="430" y2="162" stroke="#D8E0EA" stroke-width="1.6"/><rect x="386" y="162" width="88" height="46" rx="5" fill="#fff" stroke="#6B7280" stroke-width="1.6"/><text x="430" y="190" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280" font-weight="bold">Cameras</text><line x1="536" y1="76" x2="532" y2="162" stroke="#D8E0EA" stroke-width="1.6"/><rect x="488" y="162" width="88" height="46" rx="5" fill="#fff" stroke="#B45309" stroke-width="1.6"/><text x="532" y="183" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9.5" fill="#B45309" font-weight="bold">Building</text><text x="532" y="195" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9.5" fill="#B45309" font-weight="bold">systems</text><line x1="536" y1="76" x2="634" y2="162" stroke="#D8E0EA" stroke-width="1.6"/><rect x="590" y="162" width="88" height="46" rx="5" fill="#fff" stroke="#1F3A5F" stroke-width="1.6"/><text x="634" y="190" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#1F3A5F" font-weight="bold">Management</text><text x="14" y="120" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#6B7280">Seven networks can exist in a console and still share one physical broadcast</text><text x="14" y="138" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#6B7280">domain. Defining them is configuration. Separating them is a cutover.</text><rect x="14" y="160" width="300" height="1" fill="#D8E0EA"/><text x="14" y="186" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10.5" font-weight="bold" fill="#1F3A5F">Measured at one Oahu campus</text><text x="14" y="204" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10.5" fill="#6B7280">7 networks defined, 1 physical /24 in use</text><text x="14" y="222" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10.5" fill="#6B7280">257 competing wireless networks nearby</text></svg>
+        <figcaption>Defining a network in the console is configuration. Actually
+        separating traffic is a cutover with a rollback plan.</figcaption>
+      </figure>
       <div>
-        <h3 style="color:var(--navy);margin-bottom:1rem;font-size:1.4rem">The discipline behind the work</h3>
-        <p style="margin-bottom:1rem">ButeraNet Solutions is founded by Travis Butera, an engineer with 18 years of IT and cybersecurity experience. Specialized in network engineering, systems administration, and information security for complex high-stakes environments.</p>
-        <p>The same documentation discipline, segmentation rigor, and incident-response standards used to protect mission-critical networks come to your small organization on the same retainer cost as your current break-fix relationship.</p>
+        <h3 style="margin-bottom:12px">Why this matters more than a speed test</h3>
+        <p>A congested 2.4&nbsp;GHz band cannot be fixed with a better access point,
+        because the interference is coming from outside the building. It gets fixed by
+        moving clients to 5 and 6&nbsp;GHz, narrowing channel width, and placing radios
+        where measurement says they belong.</p>
+        <p>A console showing seven networks looks segmented. If every device still sits
+        on one physical subnet, a thermostat can still reach the finance workstation.
+        The console was telling the truth about its configuration and nothing about the
+        wiring.</p>
+        <p style="margin-bottom:0"><a href="/work/" style="color:#8FBCE6;font-weight:bold">Read
+        how these were found &rarr;</a></p>
       </div>
-      <aside class="about-card">
-        <h3>Credentials</h3>
-        <ul class="creds">
-          <li>18+ years in IT &amp; cybersecurity engineering</li>
-          <li>Enterprise &amp; mission-critical network experience</li>
-          <li>Network administration, systems engineering, information security</li>
-          <li>BS in Information Technology, Summa Cum Laude</li>
-          <li>Self-performed engagements end-to-end</li>
-          <li>Portfolio-grade documentation on every deployment</li>
-        </ul>
-      </aside>
     </div>
   </div>
 </section>
 
-<section id="fieldnotes" aria-labelledby="fieldnotes-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="fieldnotes-h">Field notes</h2>
-      <p>Write-ups from actual engagements and from the standards work behind them. No product pitches, no gated downloads. Read them before you talk to us and you will know exactly how we think.</p>
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <p class="kicker">Scope</p>
+      <h2>How the work is bounded</h2>
+      <p>Every engagement is quoted as a fixed scope at a fixed price, phased so you can
+      see what you are buying before the next phase starts. There is no monthly tier to
+      grow into and no agreement that renews itself while nobody is watching.</p>
     </div>
-    <div class="products">
-      <div class="product"><h3>The access point that was dead for 11 days</h3><p>The hardware was fine. The cable was fine. What failed was the paper trail, and the fix took ninety seconds once we found it. Why documentation is a network component. <a href="https://buteranet.com/ap-dead-11-days.html">Read the write-up &rarr;</a></p></div>
-      <div class="product"><h3>Air-gapped AI</h3><p>Who genuinely needs AI running on hardware they control, who does not, and the honest tradeoffs either way. The reasoning behind ButeraNet Intelligence. <a href="https://buteranet.com/air-gapped-ai.html">Read the write-up &rarr;</a></p></div>
-      <div class="product"><h3>CMMC 2.0 from the field</h3><p>What a small defense contractor, or a firm supporting one, actually has to do. The burden is documentation and evidence, not new technology. <a href="https://buteranet.com/cmmc-2-small-contractors.html">Read the write-up &rarr;</a></p></div>
+    <div class="cards" style="margin-top:34px">
+      <div class="card"><span class="num">01</span><h3>Assess and advise</h3>
+        <p>A survey of what you have, what is failing, and why. You get the findings in
+        writing whether or not you hire me. This often concludes that you do not need
+        the thing you were about to buy.</p></div>
+      <div class="card"><span class="num">02</span><h3>Design only</h3>
+        <p>Full design package, addressing plan, channel and power plan, and a bill of
+        materials. Your team or your existing contractor builds it. I stay reachable
+        through the build.</p></div>
+      <div class="card"><span class="num">03</span><h3>Design and deploy</h3>
+        <p>I design it, stage it, configure it, cut it over and document it. One engineer
+        from the first walkthrough to final validation, so nothing is dropped in a handoff
+        between people.</p></div>
+      <div class="card"><span class="num">04</span><h3>Support, optional</h3>
+        <p>Monitoring, firmware lifecycle and configuration changes on what I built,
+        scoped by sites, hours and severity. You keep the hardware and the documentation
+        whether or not you take it.</p></div>
+    </div>
+    <div class="pair"><a class="btn" href="/services/">What each phase includes</a></div>
+  </div>
+</section>
+
+<section class="tintbg">
+  <div class="wrap split even">
+    <div>
+      <p class="kicker">Sectors</p>
+      <h2>Sanctuaries, gyms, classrooms, baseyards</h2>
+      <p>Most network design assumes a floor of desks with predictable density and a
+      ceiling you can drill. A campus with a hard-ceilinged auditorium, a reflective gym,
+      concrete between classrooms and cameras out at the property line behaves nothing
+      like that, and the difference shows up during the first week of use.</p>
+      <ul class="ticks" style="margin-top:20px">
+        <li><a href="/industries/houses-of-worship/"><strong>Houses of worship</strong></a>
+          five distinct coverage problems under one roof and a deadline every Sunday</li>
+        <li><strong>Schools and education</strong> device density that arrives all at
+          once, filtering obligations, and a refresh window the length of a summer</li>
+        <li><strong>Nonprofits</strong> capital funding available, recurring software
+          budget unavailable, which is the exact shape this platform fits</li>
+        <li><strong>Public agencies</strong> documented segmentation and an audit trail,
+          procured on a calendar that belongs to someone else</li>
+      </ul>
+      <div class="pair"><a class="btn ghost" href="/industries/">All sectors</a></div>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 560 222" role="img" aria-label="Even grid access point placement compared with placement derived from measurement"><rect width="560" height="222" fill="#fff"/><text x="133" y="18" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13.5" font-weight="bold" fill="#1F3A5F">Grid from a floor plan</text><rect x="12" y="30" width="150" height="74" rx="4" fill="#F1F5F9" stroke="#D8E0EA"/><text x="18" y="44" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Sanctuary</text><rect x="168" y="30" width="86" height="74" rx="4" fill="#F1F5F9" stroke="#D8E0EA"/><text x="174" y="44" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Lobby</text><rect x="12" y="110" width="110" height="64" rx="4" fill="#F1F5F9" stroke="#D8E0EA"/><text x="18" y="124" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Gym</text><rect x="128" y="110" width="126" height="64" rx="4" fill="#F1F5F9" stroke="#D8E0EA"/><text x="134" y="124" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Classrooms</text><rect x="12" y="180" width="242" height="34" rx="4" fill="#F1F5F9" stroke="#D8E0EA"/><text x="18" y="194" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Lot</text><circle cx="50" cy="58" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="50" cy="58" r="3.4" fill="#6B7280"/><circle cx="126" cy="58" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="126" cy="58" r="3.4" fill="#6B7280"/><circle cx="202" cy="58" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="202" cy="58" r="3.4" fill="#6B7280"/><circle cx="50" cy="124" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="50" cy="124" r="3.4" fill="#6B7280"/><circle cx="126" cy="124" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="126" cy="124" r="3.4" fill="#6B7280"/><circle cx="202" cy="124" r="7.5" fill="#6B7280" opacity=".18"/><circle cx="202" cy="124" r="3.4" fill="#6B7280"/><text x="133" y="207" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280" font-weight="bold">6 access points</text><line x1="280" y1="26" x2="280" y2="196" stroke="#D8E0EA" stroke-dasharray="3 4"/><text x="427" y="18" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13.5" font-weight="bold" fill="#1F3A5F">Placed from measurement</text><rect x="306" y="30" width="150" height="74" rx="4" fill="#EAF3FB" stroke="#D8E0EA"/><text x="312" y="44" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Sanctuary</text><rect x="462" y="30" width="86" height="74" rx="4" fill="#EAF3FB" stroke="#D8E0EA"/><text x="468" y="44" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Lobby</text><rect x="306" y="110" width="110" height="64" rx="4" fill="#EAF3FB" stroke="#D8E0EA"/><text x="312" y="124" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Gym</text><rect x="422" y="110" width="126" height="64" rx="4" fill="#EAF3FB" stroke="#D8E0EA"/><text x="428" y="124" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Classrooms</text><rect x="306" y="180" width="242" height="34" rx="4" fill="#EAF3FB" stroke="#D8E0EA"/><text x="312" y="194" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#6B7280">Lot</text><circle cx="336" cy="62" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="336" cy="62" r="3.4" fill="#2E75B6"/><circle cx="381" cy="52" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="381" cy="52" r="3.4" fill="#2E75B6"/><circle cx="426" cy="62" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="426" cy="62" r="3.4" fill="#2E75B6"/><circle cx="502" cy="50" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="502" cy="50" r="3.4" fill="#2E75B6"/><circle cx="358" cy="118" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="358" cy="118" r="3.4" fill="#2E75B6"/><circle cx="402" cy="142" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="402" cy="142" r="3.4" fill="#2E75B6"/><circle cx="482" cy="110" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="482" cy="110" r="3.4" fill="#2E75B6"/><circle cx="518" cy="132" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="518" cy="132" r="3.4" fill="#2E75B6"/><circle cx="426" cy="172" r="7.5" fill="#2E75B6" opacity=".18"/><circle cx="426" cy="172" r="3.4" fill="#2E75B6"/><text x="427" y="207" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="10" fill="#2E75B6" font-weight="bold">9 access points</text></svg>
+      <figcaption>Left, an even grid from a floor plan. Right, placement derived from a
+      site survey of the same building. The count changes, and so does which rooms
+      actually work.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Delivery</p>
+      <h2>One engineer, start to finish</h2>
+      <p>The person who walks your building is the person who writes the design, racks
+      the switches, runs the cutover and trains your staff. No account manager, no
+      tier-one queue, and nobody arriving with a printed plan they did not write.</p>
+      <p class="mono" style="color:var(--slate);font-size:.9rem">Seventeen years in
+      submarine networks. ISSM and cyber inspector for a squadron of fast-attack
+      submarines. Same discipline, smaller buildings.</p>
+      <div class="pair"><a class="btn ghost" href="/about/">Background and credentials</a></div>
+    </div>
+    <ol class="rail">
+      <li><h3>Walk the building</h3><p>Every room, including the ones nobody mentions
+        until the second visit, and the outdoor runs between them.</p></li>
+      <li><h3>Survey, then specify</h3><p>Radio placement comes from measurement.
+        A floor plan and a rule of thumb produce the diagram on the left, above.</p></li>
+      <li><h3>Design and quote</h3><p>Written design, diagrams, addressing, channel plan
+        and a bill of materials with the supplier and date on every line.</p></li>
+      <li><h3>Stage on the bench</h3><p>Switches and radios are configured and burned in
+        before anything is carried into your building.</p></li>
+      <li><h3>Cut over midweek</h3><p>New infrastructure runs in parallel where the
+        building allows it, with a written rollback. Licensed contractors perform any
+        cabling, conduit or mounting.</p></li>
+      <li><h3>Hand over</h3><p>As-builts, a credential register in a vault you control,
+        and training until your team can do the ordinary things without calling me.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap narrow" style="text-align:center;margin-inline:auto">
+    <h2>Send me what you are running today</h2>
+    <p class="lede" style="margin-inline:auto">A photo of the closet and a description of
+    what is failing is enough to start. The first conversation and the on-site assessment
+    are free, and the findings are yours in writing either way.</p>
+    <div class="pair" style="justify-content:center">
+      <a class="btn on-dark" href="/contact/">Request an assessment</a>
+      <a class="btn ghost on-dark" href="/field-notes/">Read the field notes first</a>
     </div>
   </div>
 </section>
 
-<section id="contact" aria-labelledby="contact-h">
-  <div class="s-i">
-    <div class="s-h">
-      <h2 id="contact-h">Start with a free assessment</h2>
-      <p>30-minute discovery call, then on-site or remote walkthrough. Written design and fixed-price proposal within 48 hours. No commitment, no payment, no obligation.</p>
-    </div>
-    <div class="c-grid">
-      <div class="c-info">
-        <div class="c-card"><div class="lbl">Email</div><a href="/cdn-cgi/l/email-protection#681c0c0a1d1c0d1a0928181a071c070646050d"><span class="__cf_email__" data-cfemail="3b4f5f594e4f5e495a7b4b49544f545515565e">[email&#160;protected]</span></a></div>
-        <div class="c-card"><div class="lbl">Phone or text</div><a href="tel:+18082131629">(808) 213-1629</a></div>
-        <div class="c-card"><div class="lbl">Web</div><a href="https://buteranet.com">buteranet.com</a> · <a href="https://intelligence.buteranet.com">intelligence.buteranet.com</a></div>
-        <div class="c-card"><div class="lbl">Service area</div><span class="v">Oahu primary · Remote nationwide</span></div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="color:#fff;font-size:1.2rem">ButeraNet<b style="color:#4A90D0">.</b></div>
+        <p style="margin:13px 0 0;max-width:34ch">UniFi network design and deployment for
+        Hawaii facilities that were never built as office buildings.</p>
+        <p class="mono" style="margin-top:15px;font-size:.84rem">Honolulu, Hawaii<br>
+        <a href="tel:+18082131629">(808) 213-1629</a></p>
       </div>
-      <form class="c-form" action="https://formspree.io/f/xrerkkoe" method="POST">
-        <label for="f-name">Name</label>
-        <input id="f-name" name="name" type="text" required autocomplete="name">
-        <label for="f-org">Organization</label>
-        <input id="f-org" name="organization" type="text" autocomplete="organization">
-        <label for="f-email">Email</label>
-        <input id="f-email" name="email" type="email" required autocomplete="email">
-        <label for="f-phone">Phone (optional)</label>
-        <input id="f-phone" name="phone" type="tel" autocomplete="tel">
-        <label for="f-msg">Message</label>
-        <textarea id="f-msg" name="message" required></textarea>
-        <input type="hidden" name="_subject" value="New inquiry from msp.buteranet.com">
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-        <button type="submit" class="btn">Send</button>
-        <p class="form-note">Submitted securely; we reply within one business day.</p>
-      </form>
+      <div><h4>Practice</h4>
+        <a href="/services/">Services</a><a href="/work/">Work</a>
+        <a href="/field-notes/">Field Notes</a></div>
+      <div><h4>Sectors</h4>
+        <a href="/industries/houses-of-worship/">Houses of worship</a>
+        <a href="/industries/">All sectors</a></div>
+      <div><h4>Company</h4>
+        <a href="/about/">About</a><a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="f-i">
-    <div class="tag">Infrastructure. Security. Reliability.</div>
-    <div class="copy">© 2026 ButeraNet Solutions · <a href="https://buteranet.com">buteranet.com</a> · <a href="https://intelligence.buteranet.com">intelligence.buteranet.com</a> · <a href="/cdn-cgi/l/email-protection#790d1d1b0c0d1c0b1839090b160d161757141c"><span class="__cf_email__" data-cfemail="9ce8f8fee9e8f9eefddceceef3e8f3f2b2f1f9">[email&#160;protected]</span></a> · (808) 213-1629</div>
-    <div class="copy" style="margin-top:.5rem;font-size:.85rem;opacity:.8"><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/faq.html">FAQ</a> · <a href="/case-studies.html">Case Studies</a> · <a href="/pricing.html">Pricing</a></div>
+    <div class="legal">
+      <p>ButeraNet Solutions LLC, Honolulu, Hawaii. Network design, configuration,
+      documentation and support. ButeraNet Solutions LLC is not a licensed Hawaii
+      contractor; physical cabling, conduit and mounting are performed by appropriately
+      licensed contractors engaged directly by the client.</p>
+      <p style="margin:0">Client names withheld pending written consent. Measurements
+      shown are from real engagements and are reported without identifying the site.</p>
+    </div>
   </div>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Mobile nav toggle
-  var hamb = document.getElementById('hamb');
-  var navList = document.getElementById('navlist');
-  hamb.addEventListener('click', function(){
-    var isOpen = navList.classList.toggle('open');
-    hamb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
+  if(!b||!n) return;
+  b.addEventListener('click',function(){
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open?'Close':'Menu';
   });
-  // Close mobile nav on link click
-  document.querySelectorAll('#navlist a').forEach(function(a){
-    a.addEventListener('click', function(){ navList.classList.remove('open'); hamb.setAttribute('aria-expanded','false'); });
-  });
+})();
 </script>
-
 </body>
 </html>

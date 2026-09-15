@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Work | Engagement Notes and Measurements | ButeraNet</title>
+<meta name="description" content="Anonymized engagement notes from Hawaii network assessments and deployments, with the measurements that produced each finding.">
+<link rel="canonical" href="https://net.buteranet.com/work/">
+<meta property="og:title" content="Work | Engagement Notes and Measurements | ButeraNet">
+<meta property="og:description" content="Anonymized engagement notes from Hawaii network assessments and deployments, with the measurements that produced each finding.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://net.buteranet.com/work/">
+<meta property="og:image" content="https://net.buteranet.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://net.buteranet.com/og-image.png">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="stylesheet" href="/assets/bn.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="/">ButeraNet<b>.</b></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav"><a href="/services/">Services</a><a href="/industries/">Industries</a><a href="/work/" aria-current="page">Work</a><a href="/field-notes/">Field Notes</a><a href="/about/">About</a><a class="btn" href="/contact/">Request an assessment</a></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="tight" style="padding-top:clamp(36px,5vw,64px)">
+  <div class="wrap narrow">
+    <p class="kicker">Work</p>
+    <h1>Two engagements, reported without naming them.</h1>
+    <p class="lede">Client names are withheld pending written consent. Every measurement
+    below came off a real console or a real survey on the date shown.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="tag">Ongoing</span>
+        <h2 style="margin-top:14px">A multi-campus church, Oahu</h2>
+        <p>Inherited a flat network on aging hardware with a controller that had already
+        failed once. The brief was coverage. The finding was that coverage was the third
+        problem in the queue.</p>
+        <h3 style="margin-top:26px;font-size:1.1rem">What was found</h3>
+        <ul class="ticks" style="margin-top:14px">
+          <li><strong>One GbE uplink carried every switch in the building.</strong> The
+            core was uplinked into its own port, so a single cable was the whole
+            estate</li>
+          <li><strong>Seven networks existed in the console and shared one physical
+            /24.</strong> The segmentation was configured and not in effect</li>
+          <li><strong>257 competing wireless networks</strong> within range, driving 45
+            to 68 percent airtime utilization on 2.4&nbsp;GHz</li>
+          <li><strong>An access point had been dead for eleven days.</strong> The
+            hardware and the cable were both fine</li>
+          <li><strong>Three switches had been added</strong> since the previous baseline
+            with no record of parent switch or port</li>
+        </ul>
+        <h3 style="margin-top:26px;font-size:1.1rem">What was done</h3>
+        <ul class="ticks" style="margin-top:14px">
+          <li>Controller migrated off the failed appliance onto a supported host</li>
+          <li>Wireless survey across sanctuary, offices and classrooms, then a measured
+            channel and power plan</li>
+          <li>Segmentation model written, with the cutover staged as a relocation event
+            rather than a configuration change</li>
+          <li>Asset register, topology and credential register produced and handed to
+            the volunteer team</li>
+        </ul>
+      </div>
+      <div>
+        <div class="photo-slot"><span class="mono">Photo slot</span><span style="font-size:.88rem;max-width:34ch">Media room rack, before and after.</span></div>
+        <div style="height:18px"></div>
+        <div class="tscroll">
+          <table class="spec">
+            <thead><tr><th>Measured</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Access points</td><td class="m">13</td></tr>
+              <tr><td>Switches</td><td class="m">5 plus 3 compact</td></tr>
+              <tr><td>Networks defined</td><td class="m">7</td></tr>
+              <tr><td>Physical subnets in use</td><td class="m">1</td></tr>
+              <tr><td>Competing networks</td><td class="m">257</td></tr>
+              <tr><td>2.4 GHz airtime</td><td class="m">45 to 68 percent</td></tr>
+              <tr><td>Links below rated speed</td><td class="m">3</td></tr>
+              <tr><td>Facility area</td><td class="m">39,551 sq ft</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" style="margin-top:18px">The access point that was dead for eleven
+        days is written up in full under
+        <a href="/field-notes/">field notes</a>. The cause was a documentation gap and
+        the fix took ninety seconds once it was found.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap split">
+    <div>
+      <span class="tag">In progress</span>
+      <h2 style="margin-top:14px">A multi-site ministry, Maui</h2>
+      <p>An inherited multi-vendor estate with two perimeter security products, two
+      remote access tools, overlapping forms and telephony platforms, and no asset
+      register. The first deliverable was knowing what existed.</p>
+      <ul class="ticks" style="margin-top:20px">
+        <li>Asset and systems register built from a read-only console audit</li>
+        <li>Ten overlapping products identified and registered for consolidation review</li>
+        <li>An operations manual separated from the credential register, so one can be
+          shared and the other cannot</li>
+        <li>Licensing reviewed against actual active accounts rather than purchased seats</li>
+      </ul>
+      <p class="note" style="margin-top:20px">No savings figure is published here.
+      Consolidation findings are blocked pending invoices and contracts, and I will not
+      put an estimate in a public case study.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 700 192" role="img" aria-label="Four sites managed from one console over their existing internet connections"><rect width="700" height="192" fill="#fff"/><rect x="210" y="14" width="280" height="50" rx="7" fill="#1F3A5F"/><text x="350" y="35" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="#fff">One console</text><text x="350" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#C6D6E8">one policy, applied the same way at every site</text><path d="M 350 64 L 350 92 L 94 92 L 94 118" fill="none" stroke="#D8E0EA" stroke-width="1.8" stroke-linejoin="round"/><rect x="18" y="118" width="152" height="58" rx="6" fill="#fff" stroke="#2E75B6" stroke-width="1.6"/><text x="94" y="140" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#1F3A5F">Main campus</text><text x="94" y="158" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#6B7280">largest wireless load</text><text x="94" y="171" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9" fill="#15803D">existing circuit</text><path d="M 350 64 L 350 92 L 266 92 L 266 118" fill="none" stroke="#D8E0EA" stroke-width="1.8" stroke-linejoin="round"/><rect x="190" y="118" width="152" height="58" rx="6" fill="#fff" stroke="#2E75B6" stroke-width="1.6"/><text x="266" y="140" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#1F3A5F">Satellite</text><text x="266" y="158" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#6B7280">video venue</text><text x="266" y="171" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9" fill="#15803D">existing circuit</text><path d="M 350 64 L 350 92 L 438 92 L 438 118" fill="none" stroke="#D8E0EA" stroke-width="1.8" stroke-linejoin="round"/><rect x="362" y="118" width="152" height="58" rx="6" fill="#fff" stroke="#2E75B6" stroke-width="1.6"/><text x="438" y="140" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#1F3A5F">School</text><text x="438" y="158" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#6B7280">device density</text><text x="438" y="171" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9" fill="#15803D">existing circuit</text><path d="M 350 64 L 350 92 L 610 92 L 610 118" fill="none" stroke="#D8E0EA" stroke-width="1.8" stroke-linejoin="round"/><rect x="534" y="118" width="152" height="58" rx="6" fill="#fff" stroke="#2E75B6" stroke-width="1.6"/><text x="610" y="140" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" fill="#1F3A5F">Office and baseyard</text><text x="610" y="158" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#6B7280">wired, cameras</text><text x="610" y="171" text-anchor="middle" font-family="SFMono-Regular,Consolas,Menlo,monospace" font-size="9" fill="#15803D">existing circuit</text></svg>
+      <figcaption>The target state. Several sites, one policy, over circuits each
+      location already pays for.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap narrow" style="text-align:center;margin-inline:auto">
+    <h2>Your building probably has one of these</h2>
+    <p class="lede" style="margin-inline:auto">A single uplink carrying everything, or
+    segmentation that exists only in the console, are the two most common findings I
+    walk into. Both are cheap to identify and neither shows up on a speed test.</p>
+    <div class="pair" style="justify-content:center">
+      <a class="btn on-dark" href="/contact/">Request an assessment</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="color:#fff;font-size:1.2rem">ButeraNet<b style="color:#4A90D0">.</b></div>
+        <p style="margin:13px 0 0;max-width:34ch">UniFi network design and deployment for
+        Hawaii facilities that were never built as office buildings.</p>
+        <p class="mono" style="margin-top:15px;font-size:.84rem">Honolulu, Hawaii<br>
+        <a href="tel:+18082131629">(808) 213-1629</a></p>
+      </div>
+      <div><h4>Practice</h4>
+        <a href="/services/">Services</a><a href="/work/">Work</a>
+        <a href="/field-notes/">Field Notes</a></div>
+      <div><h4>Sectors</h4>
+        <a href="/industries/houses-of-worship/">Houses of worship</a>
+        <a href="/industries/">All sectors</a></div>
+      <div><h4>Company</h4>
+        <a href="/about/">About</a><a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+    </div>
+    <div class="legal">
+      <p>ButeraNet Solutions LLC, Honolulu, Hawaii. Network design, configuration,
+      documentation and support. ButeraNet Solutions LLC is not a licensed Hawaii
+      contractor; physical cabling, conduit and mounting are performed by appropriately
+      licensed contractors engaged directly by the client.</p>
+      <p style="margin:0">Client names withheld pending written consent. Measurements
+      shown are from real engagements and are reported without identifying the site.</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
+  if(!b||!n) return;
+  b.addEventListener('click',function(){
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open?'Close':'Menu';
+  });
+})();
+</script>
+</body>
+</html>
