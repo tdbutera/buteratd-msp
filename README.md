@@ -8,17 +8,9 @@ A static multi-page site. Ten live pages share one stylesheet, `assets/bn.css`, 
 
 ## Theme (BNS, 2026-09-26)
 
-The palette and type follow the BNS brand board, recorded as clause A1 of `C:\ButeraNet\CLAUDE.md`:
+The site follows the BNS brand board. The palette authority is clause A1 of `C:\ButeraNet\CLAUDE.md` (amended 2026-09-25 and 2026-09-26); the CSS custom properties at the top of `assets/bn.css` are the site's copy of it and are the only place the values are set in this repo. Gold text on light backgrounds uses the darker gold token for contrast; the accent tokens keep their v2.0 names (`--blue`, `--blue-l`) as aliases so the pages did not need re-plumbing.
 
-| Token | Value |
-|---|---|
-| Deep Navy | `#001B31` |
-| Gold Accent | `#AE8140` (text on light backgrounds uses `#8E6A33` for contrast) |
-| Light Gray | `#C9C8C8` |
-| Muted, Panel, Rule | `#5E6672`, `#F4F4F2`, `#D8D7D4` |
-| Type | Montserrat 300 / 400 / 600, self-hosted in `assets/fonts/` under the SIL Open Font License |
-
-Logo files live in `assets/brand/`: `bns-logo-primary.svg` (light backgrounds), `bns-logo-reversed.svg` (dark backgrounds), and the `bns-mark` monogram variants for small applications. Favicons and the Open Graph image (`og-image.png`) are generated from the same files.
+Type is Montserrat 300 / 400 / 600, self-hosted in `assets/fonts/` under the SIL Open Font License. Logo files live in `assets/brand/`: `bns-logo-primary.svg` (light backgrounds), `bns-logo-reversed.svg` (dark backgrounds), and the `bns-mark` monogram variants for small applications. Favicons and the Open Graph image (`og-image.png`) are generated from the same files.
 
 ## Repo contents
 
