@@ -1,49 +1,44 @@
-# msp.buteranet.com
+# net.buteranet.com
 
-Source for the **ButeraNet Solutions** managed-services landing page, served at <https://msp.buteranet.com> via GitHub Pages + Cloudflare.
+Source for the **ButeraNet Solutions** company site, served at <https://net.buteranet.com> via GitHub Pages and Cloudflare. Deploys automatically on push to `main`.
 
 ## What this is
 
-Single-file static site ,  all CSS, JS, and SVG icons inlined. The only external dependency is Google Fonts (Inter). Deploys automatically on push to `main`.
+A static multi-page site. Ten live pages share one stylesheet, `assets/bn.css`, and inline their own SVG diagrams. The root-level `.html` files (`about.html`, `faq.html`, `pricing.html`, and so on) are redirect stubs for the retired single-page layout and point at the current pages.
+
+## Theme (BNS, 2026-09-26)
+
+The palette and type follow the BNS brand board, recorded as clause A1 of `C:\ButeraNet\CLAUDE.md`:
+
+| Token | Value |
+|---|---|
+| Deep Navy | `#001B31` |
+| Gold Accent | `#AE8140` (text on light backgrounds uses `#8E6A33` for contrast) |
+| Light Gray | `#C9C8C8` |
+| Muted, Panel, Rule | `#5E6672`, `#F4F4F2`, `#D8D7D4` |
+| Type | Montserrat 300 / 400 / 600, self-hosted in `assets/fonts/` under the SIL Open Font License |
+
+Logo files live in `assets/brand/`: `bns-logo-primary.svg` (light backgrounds), `bns-logo-reversed.svg` (dark backgrounds), and the `bns-mark` monogram variants for small applications. Favicons and the Open Graph image (`og-image.png`) are generated from the same files.
 
 ## Repo contents
 
-| File | Purpose |
+| Path | Purpose |
 |---|---|
-| `index.html` | The full site (one file, all sections) |
-| `404.html` | Branded not-found page |
-| `CNAME` | GitHub Pages custom-domain binding (`msp.buteranet.com`) |
-| `robots.txt` | Search engine crawl directives |
-| `sitemap.xml` | Sitemap for SEO |
+| `index.html`, `services/`, `industries/`, `work/`, `field-notes/`, `about/`, `contact/`, `privacy/`, `terms/` | The live pages |
+| `assets/bn.css` | The one stylesheet |
+| `assets/brand/`, `assets/fonts/` | Logo set and typefaces |
+| `404.html` | Not-found page |
+| `CNAME` | GitHub Pages custom-domain binding |
+| `robots.txt`, `sitemap.xml` | Crawl directives and sitemap |
 
 ## Local development
 
-Open `index.html` in any browser ,  no build step required.
+Serve the folder from its root so absolute asset paths resolve, for example `python -m http.server 8000`, then open <http://localhost:8000/>. No build step.
 
 ## Deploy
 
 ```bash
-git add index.html
+git add -A
 git commit -m "describe the change"
 git push origin main
 ```
-
-GitHub Pages picks up the change within a minute. Cloudflare cache (max-age 600) takes up to 10 minutes to clear; manually purge in the Cloudflare dashboard if you need it immediate.
-
-## Branding
-
-- Navy `#1F4E79` · Blue `#2E75B6` · Light Blue `#D5E8F0` · White
-- Inter (Google Fonts) with Arial fallback
-- Schema.org `LocalBusiness` JSON-LD in the `<head>`
-- ARIA-labeled interactive elements; mobile responsive
-
-## About ButeraNet Solutions
-
-Hawaii-based managed IT and AI platform for small organizations ,  churches, nonprofits, and small businesses. Founded by a senior engineer with 18+ years of IT and cybersecurity experience.
-
-- Web: <https://buteranet.com>
-- MSP site: <https://msp.buteranet.com>
-- Email: <travis@buteranet.com>
-- Phone: (808) 213-1629
-
-*Infrastructure. Security. Reliability.*
